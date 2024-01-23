@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
-import './App.css'
+import './App.css';
 
 function App() {
-
+  // console.log(import.meta.env.VITE_API_SERVER_URL);
   const [backendData, setBackendData] = useState({})
   useEffect(() => {
-    fetch('https://nerm-portfolio-api.vercel.app/api')
+    fetch(import.meta.env.VITE_API_SERVER_URL)
       .then(res => res.json())
       .then(
         data => {
