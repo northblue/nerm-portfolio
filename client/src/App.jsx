@@ -6,7 +6,7 @@ function App() {
 
   const [backendData, setBackendData] = useState({})
   useEffect(() => {
-    fetch('/api')
+    fetch('https://nerm-portfolio-api.vercel.app/api')
       .then(res => res.json())
       .then(
         data => {
