@@ -1,5 +1,7 @@
 const express = require('express')
+var cors = require('cors');
 const app = express()
+app.use(cors());
 
 app.get('/api', (req, res) => {
     console.log('hit server /api')
