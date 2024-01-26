@@ -1,26 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
 
 import './App.css';
+import About from './components/About';
+import Contact from './components/Contact';
+import Skills from './components/Skills';
+import Work from './components/Work';
 
 function App() {
-  // console.log(import.meta.env.VITE_API_SERVER_URL);
-  const [backendData, setBackendData] = useState({})
-  useEffect(() => {
-    fetch(import.meta.env.VITE_API_SERVER_URL)
-      .then(res => res.json())
-      .then(
-        data => {
-          setBackendData(data)
-        })
-  }, [])
+
   return (
     <>
-      <div style={{ textAlign: 'center', width:'100%' }}>
-        {(typeof backendData.message === 'undefined') ? (
-          <p>Loading...</p>
-        ) : (
-          <p>{backendData.message}</p>
-        )}
+      <div>
+        <Navbar />
+        <Home />
+        <About />
+        <Skills />
+        <Work />
+        <Contact />
       </div>
     </>
   )
