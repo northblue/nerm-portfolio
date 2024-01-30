@@ -44,7 +44,9 @@ This project will be hosted on Vercel
 
 ## TODO
 * Update cors for cross origin checking (https://www.youtube.com/watch?v=Cfi0mymfKiA&list=PLYKlhcCH2L2s6fHLQ8zk8ZpkGIkYTcWke&index=12&t=194s 1:59)
-* Install tailwind css
 * A fun 404 page
 * A 3D portfolio with three.js
 * Linking to MongoDB (Please check /System/Volumes/Data/Development/node_lab/nodejs_tutorial)
+* Linking contact form to getinfo.io
+* Adding GA tracking
+* Adding routing for multiple pages

@@ -3,7 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root {
+    /* #0a192f */
+    --primary-bg-color: #0a192f;
+    --primary-text-color-normal: #8892b0;
+    --primary-text-color-title: #ccd6f6;
+    --primary-color-highlight: #ccd6f6;
+}
 
 @layer base {
     body {
