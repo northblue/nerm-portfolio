@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 
+import { Analytics } from '@vercel/analytics/react';
 import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -19,6 +20,8 @@ function App() {
         <Skills />
         <Work />
         <Contact />
+
+        <Analytics />
       </div>
     </>
   )
