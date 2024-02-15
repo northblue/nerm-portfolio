@@ -1,28 +1,38 @@
-import React from 'react'
-import { HiArrowNarrowRight } from 'react-icons/hi'
+import React from 'react';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import Portrait from '../assets/portrait.jpeg';
+import { Link } from 'react-scroll';
 
 function Home() {
   return (
     <div name='home' className='w-full h-screen bg-[color:var(--primary-bg-color)]'>
-        {/* Container */}
-        <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-            <p className='text-pink-600'>Hi, my name is</p>
-            <h1 className='text-4xl sm:text-7xl font-bold text-[color:var(--primary-text-color-title)]'>Bin Li</h1>
-            <h2 className='text-4xl sm:text-7xl font-bold text-[color:var(--primary-text-color-normal)]'>
-                I'm a Full stack Developer.
-            </h2>
-            <p className='text-[#8892b0] py-4 max-w-[700px]'>
-                I'm a Full stack Developer specializing in LAMP stack and learning Nerm stack. I am also a big fan of AI and Big Data.
-            </p>
-            <div>
-                <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
-                    View Work 
-                    <span className='group-hover:rotate-90 duration-300'>
-                        <HiArrowNarrowRight className='ml-3 ' />
-                    </span>
-                    
-                </button>
+        <div className='flex flex-col justify-center items-center w-full h-full'>
+            {/* Container */}
+
+            <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+                <div className='text-[color:var(--primary-text-color-normal)] py-4 max-w-[700px]'>
+                    <p>I'm <span className='text-blue-500 text-2xl font-bold'>Bin Li</span>, a Full Stack Developer based in Sydney, 
+                        Australia, specializing in the LAMP stack and currently expanding my skills to include the NERM stack. 
+                        Additionally, I have a strong interest in AI and Big Data technologies.</p>
+                    <Link
+                        to="work"
+                        smooth={true}
+                        duration={500}
+                            >
+                        <button className='text-[color:var(--primary-text-color-normal)] group border-2 px-6 py-3 my-10 flex items-center hover:bg-blue-500'>
+                            View Work 
+                            <span className='group-hover:rotate-90 duration-300'>
+                                <HiArrowNarrowRight className='ml-3 ' />
+                            </span>
+                            
+                        </button>
+                    </Link>
+                </div>
+                <div>
+                <img src={Portrait} alt="Tailwind icon" className='w-60 float-right mx-0 my-5 max-w-[300px] rounded-full' />  
+                </div>
             </div>
+
         </div>
     </div>
   )

@@ -42,6 +42,10 @@ This project will be hosted on Vercel
 * Jest.js
 * react-icons
 
+## Services used in the project
+* Vercel
+* getForm.io
+
 ## TODO
 * Update cors for cross origin checking (https://www.youtube.com/watch?v=Cfi0mymfKiA&list=PLYKlhcCH2L2s6fHLQ8zk8ZpkGIkYTcWke&index=12&t=194s 1:59)
 * A fun 404 page
