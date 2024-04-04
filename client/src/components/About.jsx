@@ -3,8 +3,8 @@ import React from 'react'
 const About = () => {
   return (
     
-    <div name='about' className='w-full h-screen bg-[color:var(--primary-bg-color)] text-gray-300'>
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+    <div name='about' className='w-full md:h-screen bg-[color:var(--primary-bg-color)] text-gray-300'>
+        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full pt-[100px]'>
             <div className='pb-2'>
                 <p className='text-4xl font-bold inline border-b-4 border-pink-600 p-top-80 text-blue-500'>About</p>
                 <p className='py-6'> Why I want to create this project</p>

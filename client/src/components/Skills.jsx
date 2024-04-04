@@ -1,5 +1,5 @@
 import React from 'react';
-import CSS from '../assets/css.png';
+import AWS from '../assets/aws.png';
 import GitHub from '../assets/github.png';
 import JavaScript from '../assets/javascript.png';
 import Mysql from '../assets/mysql.png';
@@ -7,15 +7,14 @@ import Node from '../assets/node.png';
 import Php from '../assets/php.png';
 import ReactImg from '../assets/react.png';
 import Tailwind from '../assets/tailwind.png';
-import AWS from '../assets/aws.png'
 
 
 
 const Skills = () => {
   return (
-    <div name='skills' className='w-full h-screen bg-[color:var(--primary-bg-color)] text-gray-300'>
+    <div name='skills' className='w-full md:h-screen bg-[color:var(--primary-bg-color)] text-gray-300'>
         {/* Container */}
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full pt-[100px]'>
             <div>
                 <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-blue-500'>Experience</p>
                 <p className='py-6'>// These are the technologies I have worked with</p>
