@@ -13,15 +13,15 @@ function Home() {
             <div className='max-w-[1000px] w-full grid sm:grid-cols-3 gap-8 px-4'>
                 <div className='text-[color:var(--primary-text-color-normal)] py-4 max-w-[700px] col-span-2'>
                     <p>
-                        I'm <span className='text-blue-500 text-2xl font-bold'>
-                        <Typewriter
+                        I'm <div className='text-blue-500 text-2xl font-bold inline-block'>
+                        <Typewriter class="inline-block"
                             options={{
                                 strings: [' Bin Li', ' a Full Stack Developer', ' Practically Glued to AWS ^_^', ' also an AI Enthusiast'],
                                 autoStart: true,
                                 loop: true,
                             }}
                         />
-                        </span> 
+                        </div> 
                     </p>
                     <p className='py-10'>
                     My expertise lies in the LAMP stack, and I am currently broadening my skill 
