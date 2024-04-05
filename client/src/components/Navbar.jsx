@@ -37,7 +37,7 @@ function Navbar() {
                         to="work"
                         smooth={true}
                         duration={500}
-                    >Works</Link>
+                    >Work</Link>
                 </li>
                 <li>
                     <Link
